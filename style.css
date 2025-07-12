@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f7; /* 은은한 바다색 배경 */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2196f3; /* 진한 파란색 */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding: 20px;
+}
+
+.lesson.hidden {
+    display: none;
+}
+
+#intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#intro h2 {
+    color: #007bb5;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    background-color: #4CAF50; /* 초록색 */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.lesson-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.lesson-header h2 {
+    color: #007bb5;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.lesson-header h3 {
+    color: #555;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.content-box {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.feynman-text {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #2196f3;
+    background-color: #e3f2fd;
+}
+
+.feynman-text strong {
+    color: #004d7a;
+}
+
+.activity-section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+}
+
+.activity-section h3 {
+    color: #d32f2f; /* 빨간색 계열 */
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.activity-section ul {
+    list-style-type: none; /* 기본 불릿 제거 */
+    padding-left: 0;
+}
+
+.activity-section li {
+    margin-bottom: 15px;
+    background-color: #f0f8ff; /* 활동 배경색 */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #cceeff;
+    list-style-type: none; /* 이모지 때문에 한 번 더 선언 */
+}
+
+.activity-section li::before {
+    content: '🔎 '; /* 탐구 활동 이모지 */
+    margin-right: 8px;
+}
+
+.activity-section li p {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* 그래프 이미지 스타일 */
+.activity-section img {
+    border: 1px solid #ddd; /* 이미지 테두리 */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* 그림자 */
+}
+
+.activity-section .image-caption {
+    font-size: 0.8em;
+    color: #777;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.next-button {
+    background-color: #ff9800; /* 주황색 */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    float: right; /* 버튼을 오른쪽으로 정렬 */
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.next-button:hover {
+    background-color: #fb8c00;
+    transform: translateY(-2px);
+}
+
+#end {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#end h2 {
+    color: #28a745; /* 녹색 */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+#end h3 {
+    color: #555;
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+#end ul {
+    list-style-type: none; /* 기본 불릿 제거 */
+    padding-left: 0;
+    text-align: left;
+    display: inline-block; /* 목록 중앙 정렬을 위해 */
+}
+
+#end li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#end li::before {
+    content: '💡 '; /* 이모지 추가 */
+    margin-right: 8px;
+}
+
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .start-button, .next-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .activity-section li {
+        padding: 10px;
+    }
+}
